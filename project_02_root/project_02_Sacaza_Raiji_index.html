@@ -8,45 +8,80 @@
 <style>
 html{
     font-size: 150%;
-}
+    }
 
-body{
-        max-width: 960px;
+    body{
+        
         margin: 30px;
-        background-color: azure;
-        font-family: 'Lucida Sans';
-        border-top: 14px solid #dff460;
-        border-bottom: #dff460;
+        background-color: black;
+        font-family: 'Swiss 911 Extra Compressed';
+        color: white;
     }
     h1{
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Swiss 911 Extra Compressed';
         font-size: 200%;
-        color: antiquewhite;
+        color: white;
+        border-bottom: 15px solid red;
+        position: absolute;
+        bottom: 0px;
+        margin-left: 10px;
+        background-color: black;
+        opacity: 75%;
+        border-radius: 10px;
+        
     }
     h2{
-        font-family: 'Courier New', Courier, monospace;
+        
         font-size: 150%;
-        color: bisque;
+        color:white;
+        border: 2px solid red;
+        border-radius: 20px;
+        height: 50px;
+        text-indent: 10px;
+        background-color: darkred;
+        opacity: 75%;
     }
     p{
         font-size: 110%;
         line-height: 145%;
     }
     ol{
-        list-style-type: none;
+        list-style-type:circle;
     }
     li{
         line-height: 150%;
         font-size: 120%;
+        list-style-type: circle;
+    }
+    .Hero{
+        width: 90vw;
+        height: 100vh;
+        
     }
     figure{
-        margin-left: 0;
+        position: relative;
+    }
+    img{
+        width: 20%;
+        height: 60%;
+        
+        
+    }
+    
+    .images{
+        display: flex;
     }
 </style>
 <body>
-    <h1>GET NAKED!<br>
+    
+    <figure>
+        <img  class = "Hero"src="MT_09_action.jpg" alt="MT-09 rider" height="427" width="600">
+        <h1>GET NAKED!<br>
     Yamaha’s 2020 MT-09
     </h1>
+    </figure>
+    
+    
 
     <h2>Hyper + Naked = Fun</h2>
     <p>The MT-09 is the original Hyper Naked in Yamaha's not-so-secret society
@@ -57,9 +92,7 @@ body{
         or naked bike class.
     </p>
 
-    <figure>
-        <img src="MT_09_action.jpg" alt="MT-09 rider" height="427" width="600">
-    </figure>
+    
 
     <h2>What You Get</h2>
     <ul>
@@ -86,15 +119,15 @@ body{
     </ol>
 
     <h2>Images</h2>
-    <ol>
+    <ol class="images">
         <li>
-            <a href="../project_02_extras/feature_1/index.html">Lighting</a>
+            <img src="../project_02_extras/feature_1/MT_09_front.jpg" alt="Lighting"><a href="../project_02_extras/feature_1/index.html">Lighting</a>
         </li>
         <li>
-            <a href="../project_02_extras/feature_2/index.html">Alternate Color</a>
+            <img src="../project_02_extras/feature_2/MT_09_raven.jpg" alt=""><a href="../project_02_extras/feature_2/index.html">Alternate Color</a>
         </li>
         <li>
-            <a href="../project_02_extras/feature_3/index.html">Engine</a>
+            <img src="../project_02_extras/feature_3/engine.jpg" alt="Engine"><a href="../project_02_extras/feature_3/index.html">Engine</a>
         </li>
     </ol>
 
