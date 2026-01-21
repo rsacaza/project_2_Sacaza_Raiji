@@ -7,42 +7,69 @@
 </head>
 <style>
     body{
-        max-width: 960px;
-        margin: 30px;
-        background-color: azure;
-        font-family: 'Lucida Sans';
-        border-top: 14px solid #dff460;
-        border-bottom: #dff460;
+        width: 95vw;
+        margin: 10px;
+        margin-top: 0px;
+        background-color:rgb(42, 42, 42);
+        font-family: 'Swiss 911 Extra Compressed';
+        border-top: 14px solid red;
+        color: white;
+    
     }
     h1{
-        font-family: 'Courier New', Courier, monospace;
+        
         font-size: 200%;
-        color: antiquewhite;
     }
     h2{
-        font-family: 'Courier New', Courier, monospace;
+        
         font-size: 150%;
-        color: bisque;
+        border-bottom: 4px solid red;
     }
     p{
         font-size: 110%;
         line-height: 145%;
+        width: 100%;
+        height: fit-content;
+        border-color: 2px solid black;
     }
+    img{
+        border-radius: 10px;
+    }
+    .light{
+        display: flex;
+        flex-direction: column;
+         width: fit-content;
+        height: fit-content;
+        
+    }
+    .light-wrapper{
+        display: flex;
+        align-items: center; 
+        gap: 2rem;
+        font-size: 150%;
+        
+        
+    }
+    
 </style>
 <body>
 
 <h1>MT-09 Lighting</h1>
+
+   <div class="light-wrapper">
     <figure>
         <img src="MT_09_front.jpg" alt="MT-09 lights" height="427" width="640">
     </figure>
+
+    <div class="light"> 
+        <h2 class="night">Own the Night</h2>
+        <p>Speaking of the lights, the ofur LED headlights that create the in-your-face look of
+            the MT-09 are designed to offer incredible penetration through the darkness ahead.
+        </p>
+    </div>
+    </div>
 <small>
     <a href="../../project_02_root/project_02_Sacaza_Raiji_index.html">Back to the index</a>
 </small>
-
-<h2>Own the Night</h2>
-    <p>Speaking of the lights, the ofur LED headlights that create the in-your-face look of
-        the MT-09 are designed to offer incredible penetration through the darkness ahead.
-    </p>
-
 </body>
 </html>

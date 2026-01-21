@@ -12,8 +12,8 @@ html{
 
     body{
         
-        margin: 30px;
-        background-color: black;
+        
+        background-color:rgb(42, 42, 42);
         font-family: 'Swiss 911 Extra Compressed';
         color: white;
     }
@@ -22,65 +22,136 @@ html{
         font-size: 200%;
         color: white;
         border-bottom: 15px solid red;
-        position: absolute;
-        bottom: 0px;
-        margin-left: 10px;
         background-color: black;
-        opacity: 75%;
-        border-radius: 10px;
+        opacity: 85%;
+        border-radius: 5px;
+        width: 95.7vw;
+        text-indent: 20px;
+        object-fit: cover;
+        bottom: -35px;
+        left: 0px;
+        position: absolute;
+        padding-left: 40px;
+             
         
     }
     h2{
         
         font-size: 150%;
         color:white;
-        border: 2px solid red;
-        border-radius: 20px;
+        
+        border-bottom:10px solid red ;
         height: 50px;
         text-indent: 10px;
-        background-color: darkred;
-        opacity: 75%;
+        
+                
     }
     p{
         font-size: 110%;
         line-height: 145%;
+        width: 94vw;
+        border: 2px solid white;
+       
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
+        
     }
     ol{
-        list-style-type:circle;
+        list-style: none;
+        width: 70vw;
+       
+    }
+    ol::marker{
+        color: black;
     }
     li{
         line-height: 150%;
         font-size: 120%;
         list-style-type: circle;
-    }
-    .Hero{
-        width: 90vw;
-        height: 100vh;
+        width: 80vw;
+        margin: 10px;
+        border: 2px solid white;
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
         
     }
-    figure{
-        position: relative;
+    li::marker{
+        color: white;
+    }
+    .Hero-container{
+        
+      
+    }
+    .Hero{
+        width: 98vw;
+        height: 100vh;
+        
+        
+        
+        
+    }
+    .Hero-content{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        z-index: 10;
+      
     }
     img{
-        width: 20%;
-        height: 60%;
+        width: 100%;
+        height: 100%;
         
         
     }
     
     .images{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        object-fit: cover;
+    }
+
+    .Hero-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .grid li{
+        width: fit-content;
+        list-style: none;
+    }
+    .price{
+        height: min-content;
     }
 </style>
 <body>
     
-    <figure>
-        <img  class = "Hero"src="MT_09_action.jpg" alt="MT-09 rider" height="427" width="600">
-        <h1>GET NAKED!<br>
-    Yamaha’s 2020 MT-09
-    </h1>
-    </figure>
-    
+    <div class="Hero-container">
+        <div class="Hero">
+                 
+            <img class = "Hero-img" src="MT_09_action.jpg" alt="Bike">
+           
+                <h1>GET NAKED!<br>
+                Yamaha’s 2020 MT-09
+                </h1>
+            
+               
+
+        </div>
+    </div>
     
 
     <h2>Hyper + Naked = Fun</h2>
@@ -108,26 +179,27 @@ html{
     </ul>
 
     <h2>Vital Stats</h2>
-    <ol>
-        <li><b>Price:</b>$8,999 USD</li>
+    <ol class="grid">
+       
         <li><b>Engine:</b>847cc, DOHC, liquid-cooled inline 3-cylinder; 12 valves</li>
         <li><b>Front Suspension:</b> 41mm inverted fork, fully adjustable</li>
         <li><b>Rear Suspension:</b> Horizontal Monocross single shock, fully adjustable</li>
         <li><b>Front Brake:</b>4-piston caliper, dual 298mm disc w/ ABS</li>
         <li><b>Rear Brake:</b>1-piston caliper, 245mm disc w/ ABS</li>
-        <li><b>Claimed weight, dry:</b>425 lb.</li>
+        <li><b>Claimed weight, dry:</b>425 lb.</li> 
+        <li class="price"><b>Price:</b>$8,999 USD</li>
     </ol>
 
     <h2>Images</h2>
     <ol class="images">
         <li>
-            <img src="../project_02_extras/feature_1/MT_09_front.jpg" alt="Lighting"><a href="../project_02_extras/feature_1/index.html">Lighting</a>
+            <a href="../project_02_extras/feature_1/index.html"><img src="../project_02_extras/feature_1/MT_09_front.jpg" alt="Lighting"></a>
         </li>
         <li>
-            <img src="../project_02_extras/feature_2/MT_09_raven.jpg" alt=""><a href="../project_02_extras/feature_2/index.html">Alternate Color</a>
+            <a href="../project_02_extras/feature_2/index.html"><img src="../project_02_extras/feature_2/MT_09_raven.jpg" alt=""></a>
         </li>
         <li>
-            <img src="../project_02_extras/feature_3/engine.jpg" alt="Engine"><a href="../project_02_extras/feature_3/index.html">Engine</a>
+            <a href="../project_02_extras/feature_3/index.html"><img src="../project_02_extras/feature_3/engine.jpg" alt="Engine"></a>
         </li>
     </ol>
 
