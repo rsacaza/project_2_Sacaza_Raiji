@@ -6,43 +6,75 @@
     <title>Problem 4</title>
 </head>
 <style>
-body{
-        max-width: 960px;
-        margin: 30px;
-        background-color: grey;
+ body{
+        width: 95vw;
+        margin: 10px;
+        margin-top: 0px;
+        background-color:rgb(42, 42, 42);
         font-family: 'Swiss 911 Extra Compressed';
         border-top: 14px solid red;
+        color: white;
+        
+    
     }
     h1{
         
         font-size: 200%;
+        
     }
     h2{
         
         font-size: 150%;
-        
+        border-bottom: 4px solid red;
     }
     p{
         font-size: 110%;
         line-height: 145%;
+        width: 100%;
+        height: fit-content;
+        border-color: 2px solid black;
     }
+    img{
+        border-radius: 10px;
+    }
+    .light{
+        display: flex;
+        flex-direction: column;
+         width: fit-content;
+        height: fit-content;
+        border-color: black;
+    }
+    .light-wrapper{
+        display: flex;
+        align-items: center; 
+        gap: 2rem;
+        font-size: 150%;
+        
+        
+    }
+    
 </style>
 <body>
     <h1>MT-09 Power</h1>
+        
+        <div class="light-wrapper">
         <figure>
             <img src="engine.jpg" alt="MT-09 engine" height="427" width="650">
             <br>
         </figure>
-
-        <small>
-            <a href="../../project_02_root/project_02_Sacaza_Raiji_index.html">Back to Index</a>
-        </small>
-
+        <div class="light">
         <h2>Heart of the Beast</h2>
             <p>The 2020 Yamaha MT-09 is powered by a sweet 847cc, DOHC, liquid-cooled,
                 inline three-cylinder engine that is tuned for the type of low-end power that makes a
                 hooligan bike so much fun to ride. The MT-09 engine utilizes Yamaha’s Crossplane
                 Crankshaft Concept which produces a linear torque delivery that is the trademark of 
-                the Hyper Naked lineup.</p>
+                the Hyper Naked lineup.
+            </p>
+        </div>  
+        </div>
+
+        <small>
+            <a href="../../project_02_root/project_02_Sacaza_Raiji_index.html">Back to Index</a>
+        </small>
 </body>
 </html>

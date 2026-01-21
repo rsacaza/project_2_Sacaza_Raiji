@@ -13,7 +13,7 @@ html{
     body{
         
         
-        background-color:black;
+        background-color:rgb(42, 42, 42);
         font-family: 'Swiss 911 Extra Compressed';
         color: white;
     }
@@ -25,7 +25,7 @@ html{
         background-color: black;
         opacity: 85%;
         border-radius: 5px;
-        width: 96vw;
+        width: 95.7vw;
         text-indent: 20px;
         object-fit: cover;
         bottom: -35px;
@@ -39,25 +39,26 @@ html{
         
         font-size: 150%;
         color:white;
-        border: 2px solid red;
         
+        border-bottom:10px solid red ;
         height: 50px;
         text-indent: 10px;
-        background-color: darkred;
+        
                 
     }
     p{
         font-size: 110%;
         line-height: 145%;
-        width: 95vw;
-        background-color: white;
-        color: black;
+        width: 94vw;
+        border: 2px solid white;
+       
+        color: white;
         border-radius: 20px;
         padding: 20px;
-        opacity: 80%;
+        
     }
     ol{
-        list-style-type:circle;
+        list-style: none;
         width: 70vw;
        
     }
@@ -68,14 +69,13 @@ html{
         line-height: 150%;
         font-size: 120%;
         list-style-type: circle;
-        
-         width: 80vw;
-         margin: 10px;
-        background-color: white;
-        color: black;
+        width: 80vw;
+        margin: 10px;
+        border: 2px solid white;
+        color: white;
         border-radius: 20px;
         padding: 20px;
-        opacity: 80%;
+        
     }
     li::marker{
         color: white;
@@ -123,6 +123,19 @@ html{
         object-fit: cover; 
         
     }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .grid li{
+        width: fit-content;
+        list-style: none;
+    }
+    .price{
+        height: min-content;
+    }
 </style>
 <body>
     
@@ -166,14 +179,15 @@ html{
     </ul>
 
     <h2>Vital Stats</h2>
-    <ol>
-        <li><b>Price:</b>$8,999 USD</li>
+    <ol class="grid">
+       
         <li><b>Engine:</b>847cc, DOHC, liquid-cooled inline 3-cylinder; 12 valves</li>
         <li><b>Front Suspension:</b> 41mm inverted fork, fully adjustable</li>
         <li><b>Rear Suspension:</b> Horizontal Monocross single shock, fully adjustable</li>
         <li><b>Front Brake:</b>4-piston caliper, dual 298mm disc w/ ABS</li>
         <li><b>Rear Brake:</b>1-piston caliper, 245mm disc w/ ABS</li>
-        <li><b>Claimed weight, dry:</b>425 lb.</li>
+        <li><b>Claimed weight, dry:</b>425 lb.</li> 
+        <li class="price"><b>Price:</b>$8,999 USD</li>
     </ol>
 
     <h2>Images</h2>
